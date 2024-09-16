@@ -55,7 +55,7 @@ namespace PI_Store
             this.showPasswordCheckBox.TabIndex = 0;
             this.showPasswordCheckBox.Text = "Show password";
             this.showPasswordCheckBox.UseVisualStyleBackColor = true;
-            this.showPasswordCheckBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.showPasswordCheckBox.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // LoginTitle
             // 
@@ -66,7 +66,6 @@ namespace PI_Store
             this.LoginTitle.Size = new System.Drawing.Size(209, 43);
             this.LoginTitle.TabIndex = 6;
             this.LoginTitle.Text = "Login Page";
-            this.LoginTitle.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // loginButton
             // 
@@ -79,7 +78,7 @@ namespace PI_Store
             this.loginButton.TabIndex = 5;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = false;
-            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            this.loginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // passwordTextBox
             // 
@@ -89,8 +88,7 @@ namespace PI_Store
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(308, 32);
             this.passwordTextBox.TabIndex = 3;
-            this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
-            this.passwordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordTextBox_KeyDown);
+            this.passwordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PasswordTextBox_KeyDown);
             // 
             // passwordLabel
             // 
@@ -101,7 +99,6 @@ namespace PI_Store
             this.passwordLabel.Size = new System.Drawing.Size(100, 25);
             this.passwordLabel.TabIndex = 4;
             this.passwordLabel.Text = "Password";
-            this.passwordLabel.Click += new System.EventHandler(this.passwordLabel_Click);
             // 
             // usernameLabel
             // 
@@ -112,7 +109,6 @@ namespace PI_Store
             this.usernameLabel.Size = new System.Drawing.Size(100, 25);
             this.usernameLabel.TabIndex = 2;
             this.usernameLabel.Text = "Username";
-            this.usernameLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // contextMenuStrip1
             // 
