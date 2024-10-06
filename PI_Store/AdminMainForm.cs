@@ -8,23 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace PI_Store
 {
     public partial class AdminMainForm : Form
     {
-        
         public AdminMainForm()
         {
             InitializeComponent();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-      
+        private void panel2_Paint(object sender, PaintEventArgs e) { }
 
         private void logOutButton_Click(object sender, EventArgs e)
         {
@@ -34,19 +27,14 @@ namespace PI_Store
             loginForm.Show();
         }
 
-        private void AdminMainForm_Load(object sender, EventArgs e)
-        {
+        private void AdminMainForm_Load(object sender, EventArgs e) { }
 
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        private void panel4_Paint(object sender, PaintEventArgs e) { }
 
         private void adminAddProduct1_Load(object sender, EventArgs e)
         {
             this.Dock = DockStyle.Fill;
+            panel.Controls.Add(userControl);
         }
     }
 }
