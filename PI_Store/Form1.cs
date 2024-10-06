@@ -5,14 +5,14 @@ using System.Data.SqlClient;
 
 namespace PI_Store
 {
-    public partial class loginForm : Form
+    public partial class LoginForm : Form
     {
-        public loginForm()
+        public LoginForm()
         {
             InitializeComponent();
         }
 
-        private readonly string connectionString = "Data Source='192.168.0.101, 1433';Initial Catalog=PI_STORE;Persist Security Info=True;User ID=SA;Password=Gv.BTqpg2mC6qCa8uikg";
+        private readonly string _connectionString = "Data Source='192.168.0.101, 1433';Initial Catalog=PI_STORE;Persist Security Info=True;User ID=SA;Password=Gv.BTqpg2mC6qCa8uikg";
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -23,7 +23,7 @@ namespace PI_Store
         {
             if (EmptyFields())
             {
-                MessageBox.Show("All fields are required to log in", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(@"All fields are required to log in", @"Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -31,7 +31,7 @@ namespace PI_Store
             string password = passwordTextBox.Text.Trim();
 
             try {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
                     connection.Open();
                     string query = "SELECT * FROM Employee WHERE ID = @id AND Password = @password";
@@ -51,7 +51,7 @@ namespace PI_Store
                                 userNametextBox.Clear();
                                 passwordTextBox.Clear();
 
-                                MessageBox.Show("Login Successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show(@"Login Successfully", @"Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                                 AdminMainForm adminForm = new AdminMainForm();
                                 adminForm.Show();
@@ -59,7 +59,7 @@ namespace PI_Store
                             }
                             else
                             {
-                                MessageBox.Show("Invalid credential", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(@"Invalid credential", @"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 userNametextBox.Clear();
                                 passwordTextBox.Clear();
                             }
@@ -69,7 +69,7 @@ namespace PI_Store
             }
             catch (Exception exception)
             {
-                MessageBox.Show("Connection failed" + exception, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(@"Connection failed" + exception, @"Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace PI_Store
 {
-    partial class loginForm
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace PI_Store
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.showPasswordCheckBox = new System.Windows.Forms.CheckBox();
             this.LoginTitle = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@ namespace PI_Store
             // showPasswordCheckBox
             // 
             this.showPasswordCheckBox.AutoSize = true;
-            this.showPasswordCheckBox.Location = new System.Drawing.Point(442, 296);
+            this.showPasswordCheckBox.Location = new System.Drawing.Point(246, 269);
             this.showPasswordCheckBox.Name = "showPasswordCheckBox";
             this.showPasswordCheckBox.Size = new System.Drawing.Size(174, 29);
             this.showPasswordCheckBox.TabIndex = 0;
@@ -61,7 +61,7 @@ namespace PI_Store
             // 
             this.LoginTitle.AutoSize = true;
             this.LoginTitle.Font = new System.Drawing.Font("JetBrains Mono", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginTitle.Location = new System.Drawing.Point(504, 59);
+            this.LoginTitle.Location = new System.Drawing.Point(279, 59);
             this.LoginTitle.Name = "LoginTitle";
             this.LoginTitle.Size = new System.Drawing.Size(209, 43);
             this.LoginTitle.TabIndex = 6;
@@ -72,9 +72,9 @@ namespace PI_Store
             this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(94)))), ((int)(((byte)(87)))));
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            this.loginButton.Location = new System.Drawing.Point(442, 345);
+            this.loginButton.Location = new System.Drawing.Point(330, 320);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(209, 59);
+            this.loginButton.Size = new System.Drawing.Size(100, 50);
             this.loginButton.TabIndex = 5;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = false;
@@ -82,7 +82,7 @@ namespace PI_Store
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(442, 243);
+            this.passwordTextBox.Location = new System.Drawing.Point(246, 229);
             this.passwordTextBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
@@ -93,7 +93,7 @@ namespace PI_Store
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(437, 213);
+            this.passwordLabel.Location = new System.Drawing.Point(241, 199);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(100, 25);
@@ -103,7 +103,7 @@ namespace PI_Store
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(437, 135);
+            this.usernameLabel.Location = new System.Drawing.Point(241, 132);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(100, 25);
@@ -119,7 +119,7 @@ namespace PI_Store
             // userNametextBox
             // 
             this.userNametextBox.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.userNametextBox.Location = new System.Drawing.Point(442, 165);
+            this.userNametextBox.Location = new System.Drawing.Point(246, 162);
             this.userNametextBox.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.userNametextBox.Name = "userNametextBox";
             this.userNametextBox.Size = new System.Drawing.Size(308, 32);
@@ -131,9 +131,10 @@ namespace PI_Store
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(94)))), ((int)(((byte)(87)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.logoPictureBox);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(400, 460);
+            this.panel1.Size = new System.Drawing.Size(200, 461);
             this.panel1.TabIndex = 7;
             // 
             // label1
@@ -141,29 +142,29 @@ namespace PI_Store
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("JetBrains Mono", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            this.label1.Location = new System.Drawing.Point(110, 243);
+            this.label1.Location = new System.Drawing.Point(7, 190);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 43);
+            this.label1.Size = new System.Drawing.Size(190, 43);
             this.label1.TabIndex = 8;
-            this.label1.Text = "PI Store";
+            this.label1.Text = "KhoaStore";
             // 
             // logoPictureBox
             // 
             this.logoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.Image")));
-            this.logoPictureBox.Location = new System.Drawing.Point(118, 59);
+            this.logoPictureBox.Location = new System.Drawing.Point(22, 27);
             this.logoPictureBox.Name = "logoPictureBox";
             this.logoPictureBox.Size = new System.Drawing.Size(150, 150);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoPictureBox.TabIndex = 0;
             this.logoPictureBox.TabStop = false;
             // 
-            // loginForm
+            // LoginForm
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            this.ClientSize = new System.Drawing.Size(844, 461);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.showPasswordCheckBox);
             this.Controls.Add(this.LoginTitle);
@@ -175,7 +176,7 @@ namespace PI_Store
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Font = new System.Drawing.Font("JetBrains Mono", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "loginForm";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PI Store";
             this.Load += new System.EventHandler(this.Form1_Load);

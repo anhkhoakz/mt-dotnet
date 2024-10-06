@@ -47,7 +47,7 @@ namespace PI_Store
             this.adminPageText = new System.Windows.Forms.Label();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.adminAddUsers1 = new PI_Store.AdminAddUsers();
+            this.adminAddProduct1 = new PI_Store.AdminAddProduct();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -116,6 +116,7 @@ namespace PI_Store
             this.logOutButton.TabIndex = 18;
             this.logOutButton.Text = "Log Out";
             this.logOutButton.UseVisualStyleBackColor = false;
+            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // billButton
             // 
@@ -256,21 +257,23 @@ namespace PI_Store
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.adminAddUsers1);
+            this.panel4.Controls.Add(this.adminAddProduct1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.Location = new System.Drawing.Point(250, 50);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(834, 711);
-            this.panel4.TabIndex = 2;
+            this.panel4.TabIndex = 8;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // adminAddUsers1
+            // adminAddProduct1
             // 
-            this.adminAddUsers1.Location = new System.Drawing.Point(0, 0);
-            this.adminAddUsers1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.adminAddUsers1.Name = "adminAddUsers1";
-            this.adminAddUsers1.Size = new System.Drawing.Size(834, 711);
-            this.adminAddUsers1.TabIndex = 0;
+            this.adminAddProduct1.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminAddProduct1.Location = new System.Drawing.Point(0, 0);
+            this.adminAddProduct1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.adminAddProduct1.Name = "adminAddProduct1";
+            this.adminAddProduct1.Size = new System.Drawing.Size(834, 711);
+            this.adminAddProduct1.TabIndex = 0;
+            this.adminAddProduct1.Load += new System.EventHandler(this.adminAddProduct1_Load);
             // 
             // AdminMainForm
             // 
@@ -317,6 +320,6 @@ namespace PI_Store
         private System.Windows.Forms.Button Clientbutton;
         private System.Windows.Forms.Button EmployeeButton;
         private System.Windows.Forms.Panel panel4;
-        private AdminAddUsers adminAddUsers1;
+        private AdminAddProduct adminAddProduct1;
     }
 }
