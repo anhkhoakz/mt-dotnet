@@ -33,7 +33,7 @@ namespace PI_Store
 
         private void adminAddProduct1_Load(object sender, EventArgs e)
         {
-            this.Dock = DockStyle.Fill;
+            userControl.Dock = DockStyle.Fill;
             panel.Controls.Add(userControl);
         }
     }
